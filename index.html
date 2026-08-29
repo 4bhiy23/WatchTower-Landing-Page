@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Watchtower keeps an eye on dependency updates, vulnerabilities, and deprecations—on your schedule and in your own GitHub repository."
+    />
+    <title>Watchtower — Dependency monitoring that stays yours</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <div class="page-glow glow-one"></div>
+    <div class="page-glow glow-two"></div>
+
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Watchtower home">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M10 13 20 9l3 7h18l3-7 10 4-3 14-7 6H20l-7-6-3-14Z" fill="currentColor" opacity=".9"/>
+          <path d="M17 27h30v13c0 10-6.5 17-15 21-8.5-4-15-11-15-21V27Z" fill="currentColor"/>
+          <path d="M32 34c-6.1 0-10.5 4-12.5 7.1C21.5 44.2 25.9 48 32 48s10.5-3.8 12.5-6.9C42.5 38 38.1 34 32 34Zm0 10.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Z" fill="#11121c"/>
+        </svg>
+        <span>watchtower</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="#how-it-works">How it works</a>
+        <a href="#products">Get Watchtower</a>
+      </nav>
+      <a
+        class="header-link"
+        href="https://github.com/4bhiy23/Watch-Tower-Public-Tempelate"
+        target="_blank"
+        rel="noreferrer"
+      >
+        GitHub <span aria-hidden="true">↗</span>
+      </a>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="eyebrow"><span class="live-dot"></span> DEPENDENCY INTELLIGENCE</div>
+        <h1>Keep watch.<br /><em>Stay ahead.</em></h1>
+        <p class="hero-copy">
+          A self-hosted dependency monitor for the projects you care about.
+          Watchtower finds available updates, known vulnerabilities, and
+          deprecations—then reports what actually changed.
+        </p>
+        <div class="hero-actions">
+          <a
+            class="button button-primary"
+            href="https://github.com/4bhiy23/Watch-Tower-Public-Tempelate"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Use the GitHub template <span aria-hidden="true">→</span>
+          </a>
+          <a
+            class="button button-quiet"
+            href="https://marketplace.visualstudio.com/items?itemName=4bhiy.watchtower-vscode"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Get the VS Code extension <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <div class="hero-note">
+          <span>✦</span> Open source · Your GitHub account · $0 hosting required
+        </div>
+      </section>
+
+      <section class="signal-card" aria-label="Example Watchtower report">
+        <div class="signal-topline">
+          <span class="terminal-label">WATCHTOWER / DAILY REPORT</span>
+          <span class="timestamp">08:00 IST · TODAY</span>
+        </div>
+        <div class="signal-project">
+          <div>
+            <p class="terminal-label muted">PROJECT</p>
+            <h2>your-app</h2>
+          </div>
+          <span class="status-pill"><i></i> SCAN COMPLETE</span>
+        </div>
+        <div class="signal-grid">
+          <div class="signal-item risk">
+            <span class="signal-number">01</span>
+            <div><strong>Security issue</strong><small>next · fixed version available</small></div>
+          </div>
+          <div class="signal-item update">
+            <span class="signal-number">07</span>
+            <div><strong>Updates available</strong><small>2 major · 5 routine</small></div>
+          </div>
+          <div class="signal-item neutral">
+            <span class="signal-number">00</span>
+            <div><strong>Deprecated packages</strong><small>Nothing to clean up</small></div>
+          </div>
+        </div>
+        <div class="terminal-footer"><span>●</span> No automatic upgrades. Ever.</div>
+      </section>
+
+      <section class="proof">
+        <p>Made for teams who want visibility without another SaaS dashboard.</p>
+        <div>
+          <span>NODE.JS</span><span>PNPM</span><span>NPM</span><span>OSV</span><span>GITHUB ACTIONS</span>
+        </div>
+      </section>
+
+      <section id="how-it-works" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">ONE REPOSITORY. YOUR RULES.</p>
+          <h2>Runs quietly in the background.</h2>
+          <p>
+            Watchtower lives in its own GitHub repository. It observes your
+            projects without adding files to them or changing a single
+            dependency.
+          </p>
+        </div>
+        <ol class="steps">
+          <li>
+            <span>01</span>
+            <div><h3>Fork the template</h3><p>Start with a ready-to-run GitHub Actions workflow and an empty project list.</p></div>
+          </li>
+          <li>
+            <span>02</span>
+            <div><h3>Add your repositories</h3><p>Paste the GitHub URLs you want to monitor. Private repositories use a read-only GitHub secret.</p></div>
+          </li>
+          <li>
+            <span>03</span>
+            <div><h3>Get the signal</h3><p>A daily scan records history, updates your dashboard, and can send a short Telegram report.</p></div>
+          </li>
+        </ol>
+      </section>
+
+      <section class="feature-band">
+        <div class="feature-main">
+          <p class="eyebrow">ZERO HOSTING BILL</p>
+          <h2>Powered by the GitHub account you already use.</h2>
+          <p>
+            GitHub Actions runs the scheduled scan on a temporary runner. The
+            result is saved in your Watchtower repository. There is no Watchtower
+            server, no database to operate, and no subscription.
+          </p>
+        </div>
+        <div class="cost-card">
+          <span class="terminal-label">YOUR MONTHLY COST</span>
+          <strong>$0</strong>
+          <p>for the Watchtower software and its hosting architecture</p>
+          <small>GitHub Actions usage and private Pages availability depend on your GitHub plan.</small>
+        </div>
+      </section>
+
+      <section id="products" class="section products">
+        <div class="section-heading">
+          <p class="eyebrow">CHOOSE YOUR VIEW</p>
+          <h2>Two ways to use Watchtower.</h2>
+        </div>
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-icon">⌁</div>
+            <p class="terminal-label">AUTOMATION</p>
+            <h3>Watchtower template</h3>
+            <p>Daily GitHub Actions scans, dependency history, optional Telegram reports, and a static dashboard you control.</p>
+            <ul>
+              <li>Daily scheduled scans</li>
+              <li>Optional Telegram summary</li>
+              <li>npm updates, OSV, deprecations</li>
+            </ul>
+            <a href="https://github.com/4bhiy23/Watch-Tower-Public-Tempelate" target="_blank" rel="noreferrer">Open the template <span>→</span></a>
+          </article>
+          <article class="product-card accent">
+            <div class="product-icon">⌘</div>
+            <p class="terminal-label">IN YOUR EDITOR</p>
+            <h3>Dependency Monitor</h3>
+            <p>The Watchtower VS Code extension scans the project you have open and helps you review stable version choices before updating.</p>
+            <ul>
+              <li>Scan the current workspace</li>
+              <li>See security & update groups</li>
+              <li>Choose stable versions explicitly</li>
+            </ul>
+            <a href="https://marketplace.visualstudio.com/items?itemName=4bhiy.watchtower-vscode" target="_blank" rel="noreferrer">Install for VS Code <span>↗</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="telegram">
+        <div class="telegram-orbit">✈</div>
+        <div>
+          <p class="eyebrow">OPTIONAL TELEGRAM REPORTS</p>
+          <h2>Useful updates, delivered before your stand-up.</h2>
+          <p>
+            Connect your own Telegram bot in two secrets. Watchtower sends a
+            compact daily report: what changed, major releases, routine
+            updates, vulnerabilities, and deprecations.
+          </p>
+        </div>
+        <div class="telegram-preview">
+          <strong>Watchtower daily report</strong>
+          <span>🛡️ 1 security issue</span>
+          <span>⬆️ 2 major updates</span>
+          <span>✨ 5 routine updates</span>
+          <small>Open dashboard →</small>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <p class="eyebrow">YOUR PROJECTS. YOUR DATA.</p>
+        <h2>Build a calmer update routine.</h2>
+        <p>Fork the template, add your first project, and run a scan in minutes.</p>
+        <a class="button button-primary" href="https://github.com/4bhiy23/Watch-Tower-Public-Tempelate" target="_blank" rel="noreferrer">Start with Watchtower <span aria-hidden="true">→</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/" aria-label="Watchtower home"><span class="footer-mark">◉</span><span>watchtower</span></a>
+      <p>Read-only dependency monitoring, built to stay out of your way.</p>
+      <a href="https://github.com/4bhiy23/Watch-Tower-Public-Tempelate" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </footer>
+  </body>
+</html>
