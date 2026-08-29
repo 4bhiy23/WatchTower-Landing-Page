@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-29T21:32:00Z",
+  "title": "Design System: Watchtower",
+  "extensions": {
+    "colorMeta": {
+      "primary": { "role": "primary", "displayName": "Signal Cyan", "canonical": "#38bdf8", "tonalRamp": ["#082f49", "#0c4a6e", "#075985", "#0284c7", "#0ea5e9", "#38bdf8", "#7dd3fc", "#bae6fd"] },
+      "secondary": { "role": "secondary", "displayName": "Electric Indigo", "canonical": "#818cf8", "tonalRamp": ["#1e1b4b", "#312e81", "#3730a3", "#4338ca", "#4f46e5", "#6366f1", "#818cf8", "#c7d2fe"] },
+      "canvas": { "role": "neutral", "displayName": "Obsidian Canvas", "canonical": "#070a11", "tonalRamp": ["#030508", "#070a11", "#0d1321", "#121a2d", "#17223b", "#1e293b", "#334155", "#475569"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display Sans", "purpose": "Hero headlines and key value propositions." },
+      "headline": { "displayName": "Section Headline", "purpose": "Major section titles." },
+      "mono": { "displayName": "JetBrains Mono", "purpose": "Package names, semver versions, code blocks, and metrics." }
+    },
+    "shadows": [
+      { "name": "shadow-sm", "value": "0 1px 2px 0 rgba(0, 0, 0, 0.4)", "purpose": "Subtle elevation for small interactive pills." },
+      { "name": "shadow-lg", "value": "0 12px 28px -4px rgba(0, 0, 0, 0.6), 0 4px 12px -2px rgba(0, 0, 0, 0.5)", "purpose": "Dashboard preview console and featured cards." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Natural smooth deceleration for hover and UI states." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" },
+      { "name": "xl", "value": "1200px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "High-contrast action button used for primary GitHub Template invocation.",
+      "html": "<button class=\"ds-btn-primary\">Use the GitHub Template →</button>",
+      "css": ".ds-btn-primary { background: #ffffff; color: #070a11; font-family: 'Schibsted Grotesk', sans-serif; font-size: 0.95rem; font-weight: 600; padding: 11px 20px; border-radius: 8px; border: 1px solid #ffffff; cursor: pointer; transition: all 250ms cubic-bezier(0.16, 1, 0.3, 1); } .ds-btn-primary:hover { background: #e2e8f0; transform: translateY(-1px); }"
+    },
+    {
+      "name": "Status Badge Danger",
+      "kind": "chip",
+      "refersTo": "badge-danger",
+      "description": "OSV security vulnerability identifier badge.",
+      "html": "<span class=\"ds-badge-danger\">OSV VULN</span>",
+      "css": ".ds-badge-danger { font-family: 'JetBrains Mono', monospace; font-size: 0.68rem; font-weight: 700; padding: 2px 7px; border-radius: 4px; background: rgba(239, 68, 68, 0.18); color: #f87171; border: 1px solid rgba(239, 68, 68, 0.35); text-transform: uppercase; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Observability Bastion",
+    "overview": "Watchtower's design language evokes calm, high-precision telemetry and developer-first sovereignty. Inspired by modern developer observability tools and command consoles, the interface prioritizes information density, crisp typography, and verifiable truth over decorative fluff or neon tropes.",
+    "keyCharacteristics": [
+      "Calm, High-Contrast Palette: Charcoal and navy obsidian ground accented by electric cyan, indigo, and status-verified hues.",
+      "Precision Typography: European grotesque display (Schibsted Grotesk) paired with purpose-built monospace (JetBrains Mono) strictly for code, versions, and metrics.",
+      "Authentic Demonstrations: Realistic console previews displaying verifiable OSV advisories and semver diffs.",
+      "Zero Noise / Zero Slop: No fake AI claims, no exaggerated glowing gradients, and no unsolicited decoration."
+    ],
+    "rules": [
+      { "name": "The Monospace Discipline Rule", "body": "Monospace typography is reserved strictly for code, package identifiers, semver numbers, and terminal telemetry.", "section": "typography" },
+      { "name": "The Fact-First Rule", "body": "Color badges communicate verified status categories with text labels alongside color, never relying on color alone.", "section": "colors" }
+    ],
+    "dos": [
+      "Do preserve the strict read-only, developer-first voice.",
+      "Do ensure all tabular data uses tabular numerals and monospace version tags.",
+      "Do maintain high text contrast ratios (minimum 4.5:1 for body copy).",
+      "Do include both GitHub Template and VS Code Extension actions prominently."
+    ],
+    "donts": [
+      "Don't mention AI analysis, automatic pull requests, automatic upgrades, or drift/health scores.",
+      "Don't use neon glowing borders, fake hacker command lines, or gratuitous particle animations.",
+      "Don't hide or obscure the zero hosting cost / data ownership guarantee."
+    ]
+  }
+}
